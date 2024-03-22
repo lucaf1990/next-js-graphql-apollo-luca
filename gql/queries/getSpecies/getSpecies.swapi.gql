@@ -1,7 +1,0 @@
-query GetSpecies {
-  allSpecies {
-    species {
-      name
-    }
-  }
-}

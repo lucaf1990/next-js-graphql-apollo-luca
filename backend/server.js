@@ -8,9 +8,11 @@ const {
   GraphQLInt,
   GraphQLNonNull
 } = require('graphql')
+
 const app = express()
 const cors = require('cors');
-app.use(cors("*"))
+app.use(cors("http://localhost:*"));
+
 const authors = [
 	{ id: 1, name: 'J. K. Rowling' },
 	{ id: 2, name: 'J. R. R. Tolkien' },

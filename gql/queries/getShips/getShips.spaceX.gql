@@ -1,5 +1,0 @@
-query GetSpaceXShips($limit: Int, $offset: Int) {
-  ships(limit: $limit, offset: $offset) {
-    name
-  }
-}
