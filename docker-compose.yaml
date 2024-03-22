@@ -1,0 +1,19 @@
+version: '3'
+services:
+  express-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-express
+    ports:
+      - "5005:5005"
+    volumes:
+      - .:/app
+
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile-nextjs
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app

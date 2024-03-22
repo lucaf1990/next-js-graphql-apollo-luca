@@ -1,0 +1,15 @@
+FROM node:latest
+
+WORKDIR /backend
+
+COPY ./backend/package*.json ./
+
+RUN npm install -g nodemon
+
+RUN npm install
+
+COPY ./backend .
+
+EXPOSE 5005
+
+CMD ["nodemon", "server.js"]
